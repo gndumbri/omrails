@@ -5,10 +5,10 @@
 	  <meta property="og:title" content="Nomnom"/>
 	  <meta property="og:type" content="website"/>
 	  <meta property="og:url" content="http://powerful-journey-1891.herokuapp.com/"/>
-      <meta property="og:image" content="http://www.tuxpaint.org/stamps/stamps/food/pizza.png"/>
-      <meta property="og:site_name" content="Nomnom"/>
-      <meta property="fb:app_id" content="139963272845939" />
-      <meta property="og:description" content="Gabe's first website"/>
+    <meta property="og:image" content="http://www.tuxpaint.org/stamps/stamps/food/pizza.png"/>
+    <meta property="og:site_name" content="Nomnom"/>
+    <meta property="fb:app_id" content="139963272845939" />
+    <meta property="og:description" content="Gabe's first website"/>
       
 
 	  <%= stylesheet_link_tag    "application", :media => "all" %>
@@ -17,10 +17,9 @@
 	</head>
 	<body>
 		<%= render 'layouts/header' %> 
-
-		<%= yield %>
-
-		<%= render 'layouts/footer' %>
-
+		<div class="container-fluid">
+			<%= yield %>
+			<%= render 'layouts/footer' %>
+		</div>
 	</body>
 </html>
